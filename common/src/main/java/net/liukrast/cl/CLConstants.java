@@ -1,9 +1,6 @@
 package net.liukrast.cl;
 
-import net.liukrast.cl.platform.Services;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Items;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

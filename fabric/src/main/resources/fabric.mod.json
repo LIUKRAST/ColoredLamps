@@ -7,21 +7,24 @@
     "authors": [
         "${mod_author}"
     ],
+    "contributors": [
+        ""
+    ],
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "homepage": "https://liukrast.net/mods/${mod_id}",
+        "issues": "https://github.com/LIUKRAST/ColoredLamps/issues",
+        "sources": "https://github.com/LIUKRAST/ColoredLamps"
     },
     "license": "${license}",
     "icon": "${mod_id}.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.example.examplemod.ExampleMod"
+          "net.liukrast.cl.ColoredLamps"
         ]
     },
     "mixins": [
-        "${mod_id}.mixins.json",
-        "${mod_id}.fabric.mixins.json"
+        "${mod_id}.mixins.json"
     ],
     "depends": {
         "fabricloader": ">=${fabric_loader_version}",
@@ -31,6 +34,16 @@
     },
     "suggests": {
         "another-mod": "*"
+    },
+    "custom": {
+        "modmenu": {
+            "links": {
+                "modmenu.discord": "https://discord.gg/pvn8zg9bNY",
+                "modmenu.website": "https://liukrast.net/mods/colored_lamps",
+                "modmenu.issues": "https://github.com/LIUKRAST/ColoredLamps/issues"
+            },
+            "update_checker": true
+        }
     }
 }
   
